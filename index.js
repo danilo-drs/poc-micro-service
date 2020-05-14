@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 app.use(jwtValidationMiddleware);
 
 // usecases
+app.get('/', (req, res) => res.send('no content here'));
 app.post('/login', LoginUseCase);
 app.get('/orders', OrdersUseCase);
 app.get('/order/detail/:uuid', DetailUseCase);

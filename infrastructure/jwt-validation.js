@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 module.exports = {
 
   jwtValidationMiddleware: (req, res, next) => {
-    if (req.path === '/login') {
+    if (req.path === '/login' || req.path === '/') {
       next();
       return;
     }
