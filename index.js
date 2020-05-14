@@ -19,6 +19,6 @@ app.get('/orders', OrdersUseCase);
 app.get('/order/detail/:uuid', DetailUseCase);
 app.post('/login', LoginUseCase);
 
-app.listen(8080, '127.0.0.1', () => {
-  console.log('Example app listening on http://127.0.0.1:8080!');
+app.listen(80, '127.0.0.1', () => {
+  console.log('Example app listening on http://127.0.0.1:80!');
 });
