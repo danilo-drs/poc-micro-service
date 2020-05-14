@@ -19,6 +19,10 @@ app.get('/orders', OrdersUseCase);
 app.get('/order/detail/:uuid', DetailUseCase);
 app.post('/login', LoginUseCase);
 
+const port = process.env.PORT || 8080;
+app.listen(port);
+
 app.listen(() => {
-  console.log('Example app listening !');
+  // eslint-disable-next-line no-console
+  console.log(`App listening in PORT ${port}!`);
 });
